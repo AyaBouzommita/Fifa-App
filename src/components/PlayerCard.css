@@ -1,0 +1,129 @@
+.player-card {
+  width: 260px;
+  height: 380px;
+  background: linear-gradient(135deg, #d4af37 0%, #aa771c 100%);
+  border: 2px solid #ffdf73;
+  border-radius: 15px;
+  padding: 15px;
+  color: #332000;
+  font-family: 'DIN Condensed', 'Impact', sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  margin: 15px;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+}
+
+.player-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+}
+
+.card-top {
+  display: flex;
+  height: 55%;
+  position: relative;
+}
+
+.player-rating-pos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rating {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.position {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.country-flag, .club-logo {
+  width: 30px;
+  height: auto;
+  margin-top: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.player-image-container {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.player-image {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(212, 175, 55, 0.8);
+  margin-right: -5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45%;
+  border-top: 2px solid rgba(51, 32, 0, 0.3);
+  padding-top: 10px;
+}
+
+.player-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.player-features {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.feature-column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.feature-column div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.feature-column span {
+  font-weight: 900;
+}
+
+.player-info-extra {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.team-name {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}

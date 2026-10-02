@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="95" fill="#F7B5CD" stroke="#00B5D8" stroke-width="8"/>
+  <circle cx="100" cy="100" r="75" fill="white" stroke="#00B5D8" stroke-width="3"/>
+  <text x="50%" y="45%" font-family="Arial" font-weight="bold" font-size="14" fill="#231f20" text-anchor="middle">INTER</text>
+  <text x="50%" y="62%" font-family="Arial" font-weight="bold" font-size="14" fill="#231f20" text-anchor="middle">MIAMI</text>
+  <text x="50%" y="79%" font-family="Arial" font-weight="bold" font-size="14" fill="#231f20" text-anchor="middle">CF</text>
+</svg>

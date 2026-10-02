@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="95" fill="#C8102E" stroke="#00B2A9" stroke-width="6"/>
+  <text x="50%" y="42%" font-family="Arial" font-weight="bold" font-size="15" fill="white" text-anchor="middle">LIVERPOOL</text>
+  <text x="50%" y="65%" font-family="Arial" font-size="50" fill="#FFD700" text-anchor="middle">⚽</text>
+  <text x="50%" y="84%" font-family="Arial" font-weight="bold" font-size="12" fill="#FFD700" text-anchor="middle">FC</text>
+</svg>

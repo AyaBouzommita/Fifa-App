@@ -1,0 +1,122 @@
+.players-section {
+  padding: 20px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pitch-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 900px; /* Plus long pour accueillir les grandes cartes */
+  background: linear-gradient(180deg, #2b611e 0%, #1e4515 100%);
+  border: 4px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.5), 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Texture de pelouse (rayures) */
+.pitch-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 10%,
+    rgba(255, 255, 255, 0.03) 10%,
+    rgba(255, 255, 255, 0.03) 20%
+  );
+  pointer-events: none;
+}
+
+/* Lignes du terrain */
+.pitch-center-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.pitch-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pitch-penalty-area {
+  position: absolute;
+  left: 50%;
+  width: 400px;
+  height: 120px;
+  border: 4px solid #fff;
+  transform: translateX(-50%);
+}
+
+.pitch-penalty-area.top-area {
+  top: 0;
+  border-top: none;
+}
+
+.pitch-penalty-area.bottom-area {
+  bottom: 0;
+  border-bottom: none;
+}
+
+/* Formation des joueurs */
+.players-formation {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.player-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+/* Réduction des cartes sur le terrain pour que ça rentre */
+.player-wrapper .player-card {
+  transform: scale(0.65);
+  margin: 0;
+  transform-origin: center center;
+}
+
+.player-wrapper .player-card:hover {
+  transform: scale(0.75) translateY(-20px);
+  z-index: 100;
+}
+
+/* Positions 4-3-3 (ou similaire) */
+.gk { top: 86%; left: 50%; }
+.cb { top: 68%; left: 50%; }
+.cam { top: 48%; left: 50%; }
+.lw { top: 25%; left: 22%; }
+.st { top: 15%; left: 50%; }
+.rw { top: 25%; left: 78%; }
+
+@media (max-width: 768px) {
+  .pitch-container {
+    height: 700px;
+  }
+  .player-wrapper .player-card {
+    transform: scale(0.5);
+  }
+  .pitch-penalty-area {
+    width: 250px;
+    height: 80px;
+  }
+}
